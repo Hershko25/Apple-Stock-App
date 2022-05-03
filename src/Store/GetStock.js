@@ -28,7 +28,6 @@ const GetStockSlice = createSlice({
 export const getstock = (event) => {
     return (dispatch) => {
         if (event !== undefined) {
-            console.log('run Get')
             fetch(`https://yh-finance.p.rapidapi.com/auto-complete?q=${event}&region=US`, options)
                 .then(response => response.json())
                 .then((response) => {

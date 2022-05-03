@@ -28,7 +28,6 @@ const GetNewsSlice = createSlice({
 
 export const getNews = (shortname) => {
     return (dispatch) => {
-        console.log('run details')
         const name = shortname.split(" ");
         console.log(name[0])
         fetch(`https://yh-finance.p.rapidapi.com/auto-complete?q=${name[0]}&region=US`, options)

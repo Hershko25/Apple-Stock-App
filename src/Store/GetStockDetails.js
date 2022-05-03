@@ -34,7 +34,6 @@ const GetStockDetailsSlice = createSlice({
 
 export const getstockdetails = (symbol, shortname) => {
     return (dispatch) => {
-        console.log('run details')
         fetch(`https://yh-finance.p.rapidapi.com/stock/v2/get-chart?interval=15m&symbol=${symbol}&range=1d&region=US`, options)
             .then(response => response.json())
             .then(response => {
