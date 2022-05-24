@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import styled from 'styled-components';
-import { AreaChart, CartesianGrid, XAxis, YAxis, Area } from 'recharts';
+import { AreaChart, CartesianGrid, XAxis, YAxis, Area,ResponsiveContainer } from 'recharts';
 import StockAllInfo from '../StockAllInfo/StockAllInfo';
 
 const StockContainer = styled.ul`
@@ -12,6 +12,8 @@ const StockContainer = styled.ul`
   display: flex;
   height: 150px;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 
   & .stocktitle{
     width: 150px;
@@ -75,12 +77,14 @@ export default function Chart() {
               <h4>{stockPrice.details[key].symbol}</h4>
               <p className='name'>{stockPrice.details[key].shortname}</p>
             </div>
-            <AreaChart width={100} height={100} data={stockPrice.stock[key]}>
+            <ResponsiveContainer width='90%'>
+            <AreaChart  data={stockPrice.stock[key]}>
               <CartesianGrid stroke="none" />
               <XAxis display={'none'} />
               <YAxis hide type="number" domain={['auto']} />
               <Area type="monotone" dataKey="Price" stroke={stockPrice.chartPreviousClose[key] < stockPrice.stock[key][0].Price ? '#34c659' : '#ea4c3c'} fillOpacity={0.2} fill={stockPrice.chartPreviousClose[key] < stockPrice.stock[key][0].Price ? '#34c659' : '#ea4c3c'} />
             </AreaChart>
+            </ResponsiveContainer>
             <div >
               <p className='stockpoint'>{(stockPrice.stock[key][stockPrice.stock[key].length - 1].Price).toFixed(2)}</p>
               <div style={{ backgroundColor: stockPrice.chartPreviousClose[key] < stockPrice.stock[key][0].Price ? '#34c659' : '#ea4c3c' }} className='percentage'>
