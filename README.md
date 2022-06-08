@@ -9,4 +9,4 @@ The web app is based on yahoo finance API and the chart is built with Recharts a
 Try it - https://lnkd.in/ezV9ZP2t
 
 
-<img src='https://s3-symbol-logo.tradingview.com/apple--600.png' alt='bla'/>
+<iframe src="https://giphy.com/embed/uxHnQ1LfZwRtdDr4FP" width="218" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/uxHnQ1LfZwRtdDr4FP">via GIPHY</a></p>
