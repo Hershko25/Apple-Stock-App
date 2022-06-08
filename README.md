@@ -9,7 +9,6 @@ The web app is based on yahoo finance API and the chart is built with Recharts a
 Try it - https://lnkd.in/ezV9ZP2t
 
 
-<iframe src="https://giphy.com/embed/uxHnQ1LfZwRtdDr4FP" width="218" height="480" />
 
 <img data-target="animated-image.replacedImage" alt="chatGif.gif" class="AnimatedImagePlayer-animatedImage" src="https://giphy.com/embed/uxHnQ1LfZwRtdDr4FP" style="display: block; opacity: 1;">
 
