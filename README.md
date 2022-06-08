@@ -10,5 +10,3 @@ Try it - https://lnkd.in/ezV9ZP2t
 
 
 
-<img data-target="animated-image.replacedImage" alt="chatGif.gif" class="AnimatedImagePlayer-animatedImage" src="https://giphy.com/embed/uxHnQ1LfZwRtdDr4FP" style="display: block; opacity: 1;">
-
